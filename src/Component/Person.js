@@ -6,13 +6,14 @@ class Pereson extends React.Component{
             count : 0
         }
     }
+    
     componentDidMount(){
 
         setInterval(() => this.setState({count : this.state.count+1}), 1000);
-
+    //  console.log('mout')
     }
     componentWillUnmount(){
-        
+        // console.log('mount')
     }
     
     render(){
